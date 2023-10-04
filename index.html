@@ -13,11 +13,40 @@
             background-color: #f4f4f4;
         }
 
-        header {
+        nav {
             background-color: #333;
-            color: #fff;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
             text-align: center;
-            padding: 1em 0;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        header {
+            background-color: #eee;
+            color: #333;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            background: url('tu-url-de-imagen-aqui') no-repeat center center;
+            background-size: cover;
         }
 
         section {
@@ -39,20 +68,32 @@
 </head>
 
 <body>
-    <header>
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <header id="home">
         <h1>Mi Portafolio en Diseño y Desarrollo Web</h1>
         <p>Especialista en UX/UI</p>
+        <img src="tu-url-de-imagen-aqui" alt="Foto de perfil" class="profile-pic">
     </header>
 
-    <section>
+    <section id="about">
         <h2>Sobre mí</h2>
         <p>
             Soy un apasionado del diseño y desarrollo web con más de X años de experiencia. He trabajado con una amplia variedad de clientes y proyectos, desde sitios web individuales hasta aplicaciones empresariales a gran escala. Mi enfoque principal es siempre en la experiencia del usuario, garantizando que cada sitio o aplicación no solo se vea bien, sino que también sea intuitivo y fácil de usar.
         </p>
+    </section>
 
+    <section id="projects">
         <h2>Proyectos destacados</h2>
         <!-- Puedes agregar aquí tarjetas o links a tus proyectos -->
+    </section>
 
+    <section id="contact">
         <h2>Contacto</h2>
         <p>Si deseas trabajar conmigo o simplemente charlar sobre diseño y desarrollo, ¡me encantaría escuchar de ti! Envíame un correo a: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
     </section>
